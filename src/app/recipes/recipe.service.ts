@@ -6,6 +6,11 @@ import {Ingredient} from "../shared/ingredient";
 export class RecipeService {
 
   private recipes: Recipe[] = [
+      new Recipe('French Fries', 'sliced potatoes deep fries', 'https://afternoondrive.files.wordpress.com/2016/07/french-fries.jpg', [
+          new Ingredient('potatoes', 5),
+          new Ingredient('salt', 1),
+          new Ingredient('oil', 2)
+      ]),
     new Recipe('curry', 'indian curry', 'http://ichef.bbci.co.uk/food/ic/food_16x9_608/recipes/chickenjalfrezi_91772_16x9.jpg', [
         new Ingredient('curry powder', 2),
         new Ingredient('chicken', 1)
@@ -17,7 +22,7 @@ export class RecipeService {
     new Recipe('pizza', 'pizza description', 'http://netgeek.biz/wp-content/uploads/2015/12/pizza_newyork5.jpg', [
         new Ingredient('flour', 50),
         new Ingredient('pizza source', 1)
-    ])
+    ]),
   ];
   constructor() { }
 

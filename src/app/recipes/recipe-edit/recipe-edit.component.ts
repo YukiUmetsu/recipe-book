@@ -77,6 +77,7 @@ export class RecipeEditComponent implements OnInit, OnDestroy {
           amount: new FormControl(amount, [
             Validators.required,
             Validators.pattern("\\d+")
+              ])
         })
     )
   }
