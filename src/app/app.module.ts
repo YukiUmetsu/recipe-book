@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
@@ -17,6 +17,7 @@ import {ShoppingListService} from "./shopping-list/shopping-list.service";
 import {routing} from "./app.routing";
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 import { RecipeStartComponent } from './recipes/recipe-start.component';
+import {REACTIVE_FORM_DIRECTIVES} from "@angular/forms/src/directives";
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { RecipeStartComponent } from './recipes/recipe-start.component';
     BrowserModule,
     routing,
     FormsModule,
-    HttpModule
+    HttpModule,
+    ReactiveFormsModule
   ],
   providers: [RecipeService, ShoppingListService],
   bootstrap: [AppComponent]
