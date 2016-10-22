@@ -11,6 +11,10 @@ export class HeaderComponent {
 
   constructor(private recipeService: RecipeService) { }
 
+  onSearch(word:string){
+    this.recipeService.searchRecipe(word);
+  }
+
   onStore(){
     this.recipeService.storeData().subscribe(
         (data)=>console.log(data),

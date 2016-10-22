@@ -28,3 +28,9 @@ li a:hover {
 .navbar {
     border-radius: 0;
 }
+.dropdown-menu li a {
+    color: #008000;
+}
+.dropdown-menu li a:hover {
+    color: #5cb85c;
+}

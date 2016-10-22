@@ -2,6 +2,8 @@
 
 # compiled output
 /tmp
+/dist
+dist
 
 # dependencies
 /node_modules
@@ -30,3 +32,6 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
+dist/assets/
+dist/main.dd8189a1d9a86476d133.bundle.js
+dist/main.dd8189a1d9a86476d133.bundle.js.gz

@@ -48,6 +48,18 @@ export class RecipeService {
     this.recipes.splice(this.recipes.indexOf(recipe), 1);
   }
 
+  searchRecipe(word: string){
+      let lowercasedWord = word.toLowerCase();
+      let recipesResult = this.recipes.filter((recipe) => {
+          let firstMatch = recipe.name.toLowerCase().match('^.*' + lowercasedWord);
+          let lastMatch = recipe.name.toLowerCase().match(lowercasedWord + '.*$');
+          if (firstMatch !== null || lastMatch !== null){
+              return recipe;
+          }
+      });
+      this.recipesChanged.emit(recipesResult);
+  }
+
   storeData(){
     const body = JSON.stringify(this.recipes);
       const headers = new Headers({

@@ -1,6 +1,9 @@
 .jumbotron {
     text-align: center;
     background-color: white;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 .navbar {
     background-color: #008000;
@@ -10,6 +13,16 @@
     font-size: 5.3em;
     color: #404040;
 }
+.container .jumbotron{
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+.btn.btn-lg {
+    font-size: 30px;
+    padding: 13px 37px;
+}
+
 a{
     color: white;
 }
