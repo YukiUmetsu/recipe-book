@@ -2,14 +2,13 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'rb-home',
-  template: `
-    <h1>
-      Hello To The Recipe Book!
-    </h1>
-  `,
-  styles: []
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  currentYear = new Date().getFullYear();
+  public recipeBoxSrc = '../assets/images/recipebox.jpg';
+  public grocerylistSrc = '../assets/images/grocerylist.png';
 
   constructor() { }
 

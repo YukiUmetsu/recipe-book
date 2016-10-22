@@ -4,7 +4,8 @@ import {RecipeService} from "./recipes/recipe.service";
 
 @Component({
   selector: 'rb-header',
-  templateUrl: './header.component.html'
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
 

@@ -1,0 +1,37 @@
+<link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
+<div class="jumbotron container">
+    <h1 class=" header">Welcome to<br>The Recipe Book!</h1>
+    <p class="lead">Keep all your reciepes in one place!</p>
+    <hr class="my-2">
+    <p>Ready to get organized?</p>
+    <p class="lead">
+        <a [routerLink]="['/recipes']" class="btn btn-success btn-lg" role="button">Get started!</a>
+    </p>
+</div>
+
+<div class="container main-content">
+
+
+</div>
+
+<div class="container ">
+    <div class="row main-content">
+        <div class="col-sm-6 text-xs-center">
+            <img [src]="recipeBoxSrc" class="img-responsive center-block" alt="picture of a recipe box">
+            <p class="lead content-para">The RecipeBook is an easy way to store your recipes! Store up to 1,000 recipes with a FREE membership!</p>
+        </div>
+        <div class="col-sm-6 text-xs-center pull-xs-right">
+            <img [src]="grocerylistSrc" class="grocerylist img-responsive center-block" alt="picture of a grocery list"><p class="lead content-para">Tired of bringing a paper grocery list with you to the store? Use RecipeBook to build grocery lists and lose the paper and pen! </p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+
+<footer class="footer">
+    <span class="footer-text">&copy; Yuki Umetsu {{currentYear}} </span>
+    <span class="footer-icons">
+          <i class=" fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+          <i class=" fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+        </span>
+</footer>

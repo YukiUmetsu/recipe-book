@@ -1,0 +1,44 @@
+.jumbotron {
+    text-align: center;
+    background-color: white;
+}
+.navbar {
+    background-color: #008000;
+}
+.header {
+    font-family: 'Baloo Paaji';
+    font-size: 5.3em;
+    color: #404040;
+}
+a{
+    color: white;
+}
+a:hover {
+    color: #5cb85c;
+}
+.main-content {
+    padding-top: 10px;
+}
+.content-para {
+    padding-top: 20px;
+}
+.footer {
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    margin: 0;
+    padding-left: 20px;
+
+}
+.footer-text {
+    color: #008000;
+    font-size: 1.2em;
+}
+.footer-icons {
+    padding-left: 50px;
+    color: #008000;
+    text-align: left;
+}
+.fa-facebook-square{
+    padding-right: 5px;
+}

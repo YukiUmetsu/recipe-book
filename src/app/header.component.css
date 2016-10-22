@@ -1,0 +1,30 @@
+.jumbotron {
+    text-align: center;
+    background-color: white;
+}
+.navbar {
+    background-color: #008000;
+}
+.header {
+    font-family: 'Baloo Paaji';
+    font-size: 5.3em;
+    color: #404040;
+}
+li a{
+    color: white;
+}
+li a:hover {
+    color: #5cb85c;
+}
+.navbar-brand {
+    color: white;
+}
+.navbar-brand:hover {
+    color: #5cb85c;
+}
+.navbar-default {
+    border-color: #008000;
+}
+.navbar {
+    border-radius: 0;
+}
